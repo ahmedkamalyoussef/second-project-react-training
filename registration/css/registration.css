@@ -1,0 +1,182 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+:root{
+    --link:#6f6f6f;
+    --headers:#444444;
+    --border:#5d5e5f;
+    --btn-one:#464646;
+    --btn-two:#6d6e6e;
+    --white:#ffffff;
+    --black:#000000;
+    --back:#f3f2f3;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-column {
+    flex: 1;
+    background-color: var(--back);
+    padding: 20px;
+}
+
+.right-column {
+    width: 30%;
+    height: 100vh;
+}
+.right-column img{
+    width: 100%;
+    height: inherit;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: var(--headers);
+
+}
+
+.signup-link {
+    text-align: right;
+    margin-top: 20px;
+    color: var(--black);
+}
+
+.content h1{
+    color: var(--headers);
+}
+.content {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--black);
+
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+.facebook-button, .google-button {
+    background-color: var(--btn-one);
+    color: var(--black);
+    margin: 5px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+
+.or-divider {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    
+}
+.or-divider span{
+    margin: 0 5%;
+    
+}
+.left_divider , .right_divider{
+    width: 30%;
+    height: 1.5px;
+    background-color: #a8a8a8;
+}
+
+.login-form {
+    margin-top: 20px;
+    width: 50%;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px -10px;
+    border-radius: 5px;
+    border: 1.5px solid var(--border);
+}
+
+.remember-me {
+    margin-top: 10px;
+    text-align: left;
+    color: var(--black);
+}
+
+.recover-password {
+    color: var(--link);
+    margin-top: 10px;
+    text-align: right;
+}
+
+.login-button {
+    background-color: var(--btn-one);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .right-column {
+        display: none;
+        width: 0%;
+        height: 0vh;
+    }
+
+    header{
+        display: block;
+        align-items: center;
+    
+
+    }
+    .logo {
+        color: var(--headers);
+        font-size: 2vh;
+    }
+    
+    .signup-link {
+        font-size: 2vh;
+        text-align: left;
+        margin-top: 20px;
+        color: var(--black);
+    }
+    .or-divider {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .login-form {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
